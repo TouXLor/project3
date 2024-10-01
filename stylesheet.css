@@ -1,72 +1,123 @@
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Playfair Display', serif;
-    text-align: center;
-  }
-  header {
-    background-color: #A9BA9D;
-    width: 100vw;
-    margin: 0
-    color: white;
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
+/* General Styles */
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  width: 100%;
+  margin: 0 auto;
 }
 
-  body {
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	width: 100%;
-	margin: 0 auto;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
 
-#content {
-	overflow: auto;
-	height: 100%;}
-.column1, .column2, .column3 {
-	float: left;
-	margin: 10px;}
+/* Header */
+header {
+  background-color: #a9ba9d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+}
 
+/* Navigation */
 nav {
-	background-color: white;
-	padding: 10px;
-	margin: 0;
-    width: 100vw;
-    box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
 }
-  
+
 li {
-	display: inline;
-	padding: 10px;
+  display: inline;
+  padding: 10px;
 }
 
+/* Content Layout */
+#content,
 section {
-	overflow: auto;
-	height: 100%;
+  overflow: auto;
+  height: 100%;
+  padding: 20px;
 }
 
+.column1,
+.column2,
+.column3 {
+  float: left;
+  margin: 10px;
+}
+
+/* Main Section */
 main {
-	background-color: white;
-	padding: 10px;
-	margin: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
 }
 
-footer {
-	background-color: #A9BA9D;
-	padding: 10px;
-	margin: o;
-    color: white;
+/* Article */
+article {
+  padding: 10px;
 }
 
-<style>
-    section {
-        padding: 20px;
-    }
-
-    article {
-        padding: 10px;
-    }
-</style>
-
+/* Images */
 img {
-    max-width: 100%;  /
-    height: auto;     
+  max-width: 100%;
+  height: auto;
+}
+
+/* Video */
+.video {
+  display: block;
+  margin: auto;
+  padding-bottom: 5em;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #a9ba9d;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.textContent {
+  text-align: center;
+  margin: 50px;
+}
+
+img.imgContent {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3em;
+}
+
+.links {
+  text-align: center;
+}
+
+.buttonLinks {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a9ba9d; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonLinks:hover {
+  background-color: rgb(129, 103, 69);
 }
