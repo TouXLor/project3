@@ -1,0 +1,72 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  header {
+    background-color: #A9BA9D;
+    width: 100vw;
+    margin: 0
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+  body {
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	width: 100%;
+	margin: 0 auto;}
+
+#content {
+	overflow: auto;
+	height: 100%;}
+.column1, .column2, .column3 {
+	float: left;
+	margin: 10px;}
+
+nav {
+	background-color: white;
+	padding: 10px;
+	margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+  
+li {
+	display: inline;
+	padding: 10px;
+}
+
+section {
+	overflow: auto;
+	height: 100%;
+}
+
+main {
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+}
+
+footer {
+	background-color: #A9BA9D;
+	padding: 10px;
+	margin: o;
+    color: white;
+}
+
+<style>
+    section {
+        padding: 20px;
+    }
+
+    article {
+        padding: 10px;
+    }
+</style>
+
+img {
+    max-width: 100%;  /
+    height: auto;     
+}
