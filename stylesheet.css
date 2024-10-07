@@ -34,6 +34,8 @@ nav {
   width: 100vw;
   box-sizing: border-box;
   margin: 0;
+  position: fixed; 
+  top: 0px;
 }
 
 li {
