@@ -4,7 +4,7 @@ body {
   color: black;
   width: 100%;
   margin: 0;
-  padding-top: 12rem; /* Accounts for fixed header */
+  padding: 0; /* No padding needed at top */
 }
 
 h1,
@@ -21,7 +21,7 @@ h6 {
 header {
   background-color: #a9ba9d;
   color: white;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -29,15 +29,18 @@ header {
   z-index: 1000;
   box-sizing: border-box;
   margin: 0;
+  height: 80px; /* Set a fixed height for the header */
 }
 
 /* Navigation */
 nav {
-  background-color: #a9ba9d; /* Ensure this matches the header color */
+  background-color: #a9ba9d;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  position: relative; /* Keep it in the normal flow */
+  top: 0;
 }
 
 ul {
@@ -54,8 +57,8 @@ li {
 
 /* Splash Image */
 .splash {
-  margin-top: 0;
-  position: relative; /* Ensure it's part of document flow */
+  margin-top: 80px; /* Adjust margin to account for the fixed header */
+  position: relative;
 }
 
 .splash-image {
@@ -67,10 +70,9 @@ li {
 /* Content Layout */
 section {
   padding: 20px;
-  min-height: 500px; /* Ensures content pushes the footer down */
-  margin-top: 20px; /* Space below the splash image */
+  min-height: calc(100vh - 80px - 50px); /* Account for header and footer heights */
+  margin-top: 20px; /* Add space below the splash image */
   position: relative;
-  z-index: 1; /* Ensures it stays above the background */
 }
 
 .column1,
@@ -85,40 +87,20 @@ main {
   background-color: white;
   padding: 10px;
   margin: 10px;
-  z-index: 1; /* Ensures content appears on top */
-}
-
-/* Article */
-article {
-  padding: 10px;
-}
-
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Video */
-.video {
-  display: block;
-  margin: auto;
-  padding-bottom: 5em;
-  height: auto;
 }
 
 /* Footer */
 footer {
-  background-color: #a9ba9d; /* Ensure this matches the header and nav color */
+  background-color: #a9ba9d;
   color: white;
   padding: 10px;
   margin: 0;
   text-align: center;
   position: relative;
-  z-index: 1; /* Ensure it's visible on top */
+  bottom: 0;
+  height: 50px; /* Set a fixed height for the footer */
 }
 
-/* Text Content */
 .textContent {
   text-align: center;
   margin: 20px;
@@ -136,11 +118,11 @@ img.imgContent {
   text-align: center;
 }
 
-/* Buttons */
+/* Button Links */
 .buttonLinks {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #a9ba9d; /* Button color */
+  background-color: #a9ba9d;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -154,24 +136,24 @@ img.imgContent {
 
 /* Grid Layout for Container */
 .container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create responsive columns */
-  gap: 20px; /* Space between columns */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 /* Section Styling */
 .sectionI {
-  background-color: rgb(255, 255, 255); /* Background color */
+  background-color: rgb(255, 255, 255);
   padding: 20px;
-  box-shadow: 50px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  border-radius: 10px; /* Rounded corners */
+  box-shadow: 50px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .sectionI h2 {
-  margin-bottom: 10px; /* Space between the title and the content */
+  margin-bottom: 10px;
 }
 
 .sectionI p {
-  margin-top: 0; /* Remove any default margin from the top */
-  color: #000000; /* Text color for better visibility against background */
+  margin-top: 0;
+  color: #000000;
 }
