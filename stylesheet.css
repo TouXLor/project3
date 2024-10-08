@@ -4,7 +4,7 @@ body {
   color: black;
   width: 100%;
   margin: 0;
-  padding-top: 100px; /* Ensure content starts below fixed nav + header */
+  padding-top: 130px; /* Ensure content starts below fixed nav + header */
 }
 
 h1,
@@ -105,11 +105,12 @@ main {
 footer {
   background-color: #a9ba9d;
   color: white;
-  /*padding: 10px;
-  margin: 0;*/
+  padding: 10px;
+  margin: 0;
   position: relative;
   bottom: 0;
   z-index: 3;
+  text-align: center;
 }
 
 img.imgContent {
