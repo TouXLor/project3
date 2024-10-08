@@ -4,15 +4,10 @@ body {
   color: black;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-top: 12rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
@@ -21,32 +16,44 @@ h6 {
 header {
   background-color: #a9ba9d;
   color: white;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1000;
   box-sizing: border-box;
   margin: 0;
 }
 
 /* Navigation */
 nav {
-  background-color: white;
+  background-color: #a9ba9d; /* Ensure this matches the header color */
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  position: auto;
+  top: 0px;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; /* Remove default bullet points */
   text-align: center;
 }
 
 li {
   display: inline;
   padding: 10px;
+}
+
+/* Splash Image */
+.splash-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Content Layout */
@@ -92,15 +99,16 @@ img {
 
 /* Footer */
 footer {
-  background-color: #a9ba9d;
+  background-color: #a9ba9d; /* Ensure this matches the header and nav color */
   color: white;
   padding: 10px;
   margin: 0;
+  text-align: center;
 }
 
 .textContent {
   text-align: center;
-  margin: 50px;
+  margin: 20px;
 }
 
 img.imgContent {
@@ -118,7 +126,7 @@ img.imgContent {
 .buttonLinks {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #a9ba9d;
+  background-color: #a9ba9d; /* Button color */
   color: white;
   text-align: center;
   text-decoration: none;
@@ -128,10 +136,4 @@ img.imgContent {
 
 .buttonLinks:hover {
   background-color: rgb(129, 103, 69);
-}
-
-.splash-image {
-  width: 100%;
-  height: auto;
-  display: block;
 }
