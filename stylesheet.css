@@ -121,3 +121,9 @@ img.imgContent {
 .buttonLinks:hover {
   background-color: rgb(129, 103, 69);
 }
+
+.splash-image {
+    width: 100%; /* Makes the image full width */
+    height: auto; /* Ensures the image scales proportionally */
+    display: block; /* Removes any space below the image */
+}
