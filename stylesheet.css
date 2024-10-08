@@ -1,133 +1,138 @@
 /* General Styles */
 body {
-    font-family: "Raleway", sans-serif;
-    color: black;
-    width: 100%;
-    margin: 0;
-    padding-top: 100px; /* Ensure content starts below fixed nav + header */
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: #a9ba9d; /* Set the background color to match the green header */
-    padding: 10px;
-    width: 100vw; /* Ensure it spans the full viewport width */
-    box-sizing: border-box;
-    margin: 0;
-    position: fixed; /* Pins the nav bar at the top */
-    top: 0;
-    z-index: 1000; /* Keeps the nav on top */
-    border-bottom: 2px solid #a9ba9d; /* Optional: adds a border for separation */
-    left: 0; /* Ensure it sticks to the left side */
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; /* Remove default bullet points */
-    text-align: center;
-  }
-  
-  li {
-    display: inline-block; /* Ensure list items are aligned horizontally */
-    margin-right: 15px; /* Add space between menu items */
-  }
-  
-  /* Header (below the nav) */
-  header {
-    background-color: #a9ba9d; /* Keep this green */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed; /* Pin the header below the nav */
-    top: 50px; /* Position it below the nav bar */
-    z-index: 999; /* Slightly lower than the nav */
-  }
-  
-  /* Splash Image */
-  .splash-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px; /* Reduce the space below the splash image */
-  }
-  
-  /* Content Layout */
-  #content,
-  section {
-    overflow: auto;
-    padding: 20px;
-  }
-  
-  .column1,
-  .column2,
-  .column3 {
-    float: left;
-    margin: 10px;
-  }
-  
-  /* Text on Index Page */
-  .textContent {
-    text-align: center;
-    font-size: 1.2em; /* Slightly increase the font size for the index page content */
-    margin: 10px; /* Reduce the margin to lessen white space */
-    padding: 0px; /* Remove unnecessary padding to reduce white space */
-  }
-  
-  /* Main Section */
-  main {
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #a9ba9d;
-    color: white;
-    padding: 10px;
-    margin: 0;
-  }
-  
-  img.imgContent {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 3em;
-  }
-  
-  .links {
-    text-align: center;
-  }
-  
-  /* Button Links */
-  .buttonLinks {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #a9ba9d; /* Button color */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .buttonLinks:hover {
-    background-color: rgb(129, 103, 69);
-  }
-  
+  font-family: "Raleway", sans-serif;
+  color: black;
+  width: 100%;
+  margin: 0;
+  padding-top: 100px; /* Ensure content starts below fixed nav + header */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 20px; /* Adds space below the <h1> */
+}
+
+h2 {
+  margin-top: 30px; /* Adds space below the <h1> */
+}
+
+/* Navigation */
+nav {
+  background-color: #a9ba9d; /* Set the background color to match the green header */
+  padding: 10px;
+  width: 100vw; /* Ensure it spans the full viewport width */
+  box-sizing: border-box;
+  margin: 0;
+  position: fixed; /* Pins the nav bar at the top */
+  top: 0;
+  left: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove default bullet points */
+  text-align: center;
+}
+
+li {
+  display: inline-block; /* Ensure list items are aligned horizontally */
+  margin-right: 15px; /* Add space between menu items */
+}
+
+/* Header (below the nav) */
+header {
+  background-color: #a9ba9d; /* Keep this green */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed; /* Pin the header below the nav */
+  top: 50px; /* Position it below the nav bar */
+  z-index: 999; /* Slightly lower than the nav */
+}
+
+/* Splash Image */
+.splash-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px; /* Reduce the space below the splash image */
+}
+
+/* Content Layout */
+#content,
+section {
+  overflow: auto;
+  padding: 20px;
+}
+
+.column1,
+.column2,
+.column3 {
+  float: left;
+  margin: 10px;
+}
+
+/* Text on Index Page */
+.textContent {
+  text-align: center;
+  font-size: 1.2em; /* Slightly increase the font size for the index page content */
+  margin: 10px; /* Reduce the margin to lessen white space */
+  padding: 0px; /* Remove unnecessary padding to reduce white space */
+}
+
+/* Main Section */
+main {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #a9ba9d;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+img.imgContent {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3em;
+}
+
+.links {
+  text-align: center;
+}
+
+/* Button Links */
+.buttonLinks {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a9ba9d; /* Button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonLinks:hover {
+  background-color: rgb(129, 103, 69);
+}
