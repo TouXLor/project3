@@ -4,6 +4,7 @@ body {
   color: black;
   width: 100%;
   margin: 0 auto;
+  padding-top: 12rem;
 }
 
 h1,
@@ -96,7 +97,7 @@ footer {
 
 .textContent {
   text-align: center;
-  margin: 50px;
+  margin: 20px;
 }
 
 img.imgContent {
@@ -126,8 +127,27 @@ img.imgContent {
   background-color: rgb(129, 103, 69);
 }
 
-.splash-image {
-    width: 100%; /* Makes the image full width */
-    height: auto; /* Ensures the image scales proportionally */
-    display: block; /* Removes any space below the image */
+.container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Create responsive columns */
+  gap: 20px; /* Space between columns */
+}
+
+.sectionI {
+  background-color: rgb(255, 255, 255); /* Background color */
+  padding: 20px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border-radius: 20px; /* Rounded corners */
+}
+
+.sectionI h2 {
+  margin-bottom: 20px; /* Space between the title and the content */
+}
+
+.sectionI p {
+  margin-top: 0; /* Remove any default margin from the top */
+  color: #000000; /* Text color for better visibility against background */
 }
