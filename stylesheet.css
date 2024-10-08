@@ -177,3 +177,9 @@ img.imgContent {
   align-items: center;
   gap: 10px;
 }
+
+.intersectionalityPics {
+  max-width: 100%; /* Image will scale down if the container is smaller */
+  height: 20%; /* Maintain aspect ratio */
+  padding-left: 30%;
+}
