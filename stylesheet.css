@@ -105,8 +105,11 @@ main {
 footer {
   background-color: #a9ba9d;
   color: white;
-  padding: 10px;
-  margin: 0;
+  /*padding: 10px;
+  margin: 0;*/
+  position:relative;
+  bottom:0;
+  z-index: 3;
 }
 
 img.imgContent {
