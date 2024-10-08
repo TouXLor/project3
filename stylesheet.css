@@ -2,17 +2,14 @@
 body {
   font-family: "Raleway", sans-serif;
   color: black;
-  width: 100%;
   margin: 0;
-  padding-top: 12rem;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
@@ -21,32 +18,28 @@ h6 {
 header {
   background-color: #a9ba9d;
   color: white;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
+  height: 80px; /* Fixed height for the header */
   z-index: 1000;
   box-sizing: border-box;
-  margin: 0;
 }
 
 /* Navigation */
 nav {
-  background-color: #a9ba9d; /* Ensure this matches the header color */
+  background-color: #a9ba9d;
   padding: 10px;
-  width: 100%;
   box-sizing: border-box;
-  margin: 0;
-  position: auto;
-  top: 0px;
+  text-align: center;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  list-style: none; /* Remove default bullet points */
-  text-align: center;
+  list-style: none;
 }
 
 li {
@@ -55,62 +48,62 @@ li {
 }
 
 /* Splash Image */
+.splash {
+  margin-top: 80px; /* Push splash below fixed header */
+}
+
 .splash-image {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 600px; /* Set a maximum height for the splash image */
+  object-fit: cover; /* Ensures the image covers the available area without being distorted */
 }
 
-/* Content Layout */
-#content,
+/* Main Content Section */
 section {
-  overflow: auto;
-  height: 100%;
+  flex-grow: 1; /* Ensure the section takes up the available space between header and footer */
   padding: 20px;
-}
-
-.column1,
-.column2,
-.column3 {
-  float: left;
-  margin: 10px;
+  margin-top: 20px; /* Add space below splash */
 }
 
 /* Main Section */
 main {
   background-color: white;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-/* Article */
-article {
-  padding: 10px;
+/* SectionI Styling */
+.sectionI {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 50px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border-radius: 10px; /* Rounded corners */
 }
 
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
+.sectionI h2 {
+  margin-bottom: 10px; /* Space between the title and the content */
 }
 
-/* Video */
-.video {
-  display: block;
-  margin: auto;
-  padding-bottom: 5em;
-  height: auto;
+.sectionI p {
+  margin-top: 0; /* Remove default margin from the top */
+  color: #000000; /* Text color for better visibility */
 }
 
 /* Footer */
 footer {
-  background-color: #a9ba9d; /* Ensure this matches the header and nav color */
+  background-color: #a9ba9d;
   color: white;
   padding: 10px;
-  margin: 0;
   text-align: center;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
+/* Text Content */
 .textContent {
   text-align: center;
   margin: 20px;
@@ -128,42 +121,24 @@ img.imgContent {
   text-align: center;
 }
 
+/* Button Links */
 .buttonLinks {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #a9ba9d; /* Button color */
+  background-color: #a9ba9d;
   color: white;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .buttonLinks:hover {
   background-color: rgb(129, 103, 69);
 }
 
+/* Grid Layout */
 .container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* Create responsive columns */
-  gap: 20px; /* Space between columns */
-}
-
-.sectionI {
-  background-color: rgb(255, 255, 255); /* Background color */
-  padding: 20px;
-  box-shadow: 50px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  border-radius: 10px; /* Rounded corners */
-}
-
-.sectionI h2 {
-  margin-bottom: 10px; /* Space between the title and the content */
-}
-
-.sectionI p {
-  margin-top: 0; /* Remove any default margin from the top */
-  color: #000000; /* Text color for better visibility against background */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
