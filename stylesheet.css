@@ -105,8 +105,11 @@ main {
 footer {
   background-color: #a9ba9d;
   color: white;
-  padding: 10px;
-  margin: 0;
+  /*padding: 10px;
+  margin: 0;*/
+  position: relative;
+  bottom: 0;
+  z-index: 3;
 }
 
 img.imgContent {
@@ -136,35 +139,41 @@ img.imgContent {
 .buttonLinks:hover {
   background-color: rgb(129, 103, 69);
 }
+
+/* Everything under is for the implicit page*/
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25em; /* Optional: Adjust height as needed */
+  height: 25em;
 }
 
 .container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  ); /* Create responsive columns */
-  gap: 20px; /* Space between columns */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .sectionI {
-  background-color: rgb(255, 255, 255); /* Background color */
+  background-color: rgb(255, 255, 255);
   padding: 20px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  border-radius: 20px; /* Rounded corners */
-  margin-top: 50px; /* Space between the green background and content */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
 .sectionI h2 {
-  margin-bottom: 20px; /* Space between the title and the content */
+  margin-bottom: 20px;
 }
 
 .sectionI p {
-  margin-top: 30px; /* Remove any default margin from the top */
-  color: #000000; /* Text color for better visibility against background */
+  margin-top: 30px;
+  color: #000000;
+}
+
+.IBTbuttonLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
