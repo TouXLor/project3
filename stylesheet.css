@@ -142,6 +142,7 @@ img.imgContent {
   align-items: center;
   height: 25em; /* Optional: Adjust height as needed */
 }
+
 .container {
   display: grid; /* Use grid layout */
   grid-template-columns: repeat(
@@ -154,15 +155,16 @@ img.imgContent {
 .sectionI {
   background-color: rgb(255, 255, 255); /* Background color */
   padding: 20px;
-  box-shadow: 50px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  border-radius: 10px; /* Rounded corners */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border-radius: 20px; /* Rounded corners */
+  margin-top: 50px; /* Space between the green background and content */
 }
 
 .sectionI h2 {
-  margin-bottom: 10px; /* Space between the title and the content */
+  margin-bottom: 20px; /* Space between the title and the content */
 }
 
 .sectionI p {
-  margin-top: 0; /* Remove any default margin from the top */
+  margin-top: 30px; /* Remove any default margin from the top */
   color: #000000; /* Text color for better visibility against background */
 }
