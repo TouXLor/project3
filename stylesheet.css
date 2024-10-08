@@ -66,10 +66,11 @@ header {
 
 /* Splash Image */
 .splash-image {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: block;
-  margin-bottom: 10px; /* Reduce the space below the splash image */
+  margin: 0;
+  padding-left: 25%;
 }
 
 /* Content Layout */
