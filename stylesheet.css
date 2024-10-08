@@ -4,7 +4,7 @@ body {
   color: black;
   width: 100%;
   margin: 0;
-  padding-top: 12rem;
+  padding: 0;
 }
 
 h1,
@@ -21,12 +21,9 @@ h6 {
 header {
   background-color: #a9ba9d;
   color: white;
-  padding: 0px;
+  padding: 10px;
   text-align: center;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 100%;
   box-sizing: border-box;
   margin: 0;
 }
@@ -35,17 +32,15 @@ header {
 nav {
   background-color: white;
   padding: 10px;
-  width: 100%; /* Use 100% instead of 100vw */
+  width: 100%;
   box-sizing: border-box;
   margin: 0;
-  position: auto;
-  top: 0px;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  list-style: none; /* Remove default bullet points */
+  list-style: none;
   text-align: center;
 }
 
@@ -105,7 +100,7 @@ footer {
 
 .textContent {
   text-align: center;
-  margin: 20px;
+  margin: 50px;
 }
 
 img.imgContent {
@@ -123,7 +118,7 @@ img.imgContent {
 .buttonLinks {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #a9ba9d; /* Button color */
+  background-color: #a9ba9d;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -135,24 +130,8 @@ img.imgContent {
   background-color: rgb(129, 103, 69);
 }
 
-.container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create responsive columns */
-  gap: 20px; /* Space between columns */
-}
-
-.sectionI {
-  background-color: rgb(255, 255, 255); /* Background color */
-  padding: 20px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  border-radius: 20px; /* Rounded corners */
-}
-
-.sectionI h2 {
-  margin-bottom: 20px; /* Space between the title and the content */
-}
-
-.sectionI p {
-  margin-top: 0; /* Remove any default margin from the top */
-  color: #000000; /* Text color for better visibility against background */
+.splash-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
