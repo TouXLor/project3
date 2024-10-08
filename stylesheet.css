@@ -106,12 +106,6 @@ footer {
   text-align: center;
 }
 
-/* see if this makes enough space for the footer to be visible */
-section {
-  min-height: 500px;
-}
-
-
 .textContent {
   text-align: center;
   margin: 20px;
