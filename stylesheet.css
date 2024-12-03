@@ -47,8 +47,8 @@ ul {
 }
 
 li {
-  display: inline-block; /* Ensure list items are aligned horizontally */
-  margin-right: 15px; /* Add space between menu items */
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /* Header (below the nav) */
@@ -59,9 +59,9 @@ header {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  position: fixed; /* Pin the header below the nav */
-  top: 50px; /* Position it below the nav bar */
-  z-index: 999; /* Slightly lower than the nav */
+  position: fixed;
+  top: 50px;
+  z-index: 999;
 }
 
 /* Splash Image */
@@ -90,9 +90,9 @@ section {
 /* Text on Index Page */
 .textContent {
   text-align: center;
-  font-size: 1.2em; /* Slightly increase the font size for the index page content */
-  margin: 10px; /* Reduce the margin to lessen white space */
-  padding: 0px; /* Remove unnecessary padding to reduce white space */
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 0px;
 }
 
 /* Main Section */
@@ -184,4 +184,76 @@ img.imgContent {
   max-width: 100%; /* Image will scale down if the container is smaller */
   height: 20%; /* Maintain aspect ratio */
   padding-left: 30%;
+}
+
+/* Smaller container*/
+.container2 {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next row if needed */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px;
+}
+
+.container2 > div {
+  flex: 1 1 calc(50% - 40px); /* Set each item to take 50% of the container width, minus the gap */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  max-width: 400px;
+  border: 5px solid #a9ba9d;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.section2 {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 2px solid #a9ba9d;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.section2 h2 {
+  margin-bottom: 20px;
+}
+
+.section2 p {
+  margin-top: 30px;
+  color: #000000;
+}
+/* Bigger container */
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container3 > div {
+  flex: 1 1 calc(50% - 40px); /* Set each item to take 50% of the container width, minus the gap */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  max-width: 800px; /* Optional: Set a maximum width to prevent oversized elements */
+  border: 5px solid #a9ba9d;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.section3 {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 10px solid #a9ba9d;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.section3 h2 {
+  margin-bottom: 20px;
+}
+
+.section3 p {
+  margin-top: 30px;
+  color: #000000;
+  text-align: left;
 }
