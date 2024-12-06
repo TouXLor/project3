@@ -257,3 +257,18 @@ img.imgContent {
   color: #000000;
   text-align: left;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: auto; /* Adjust height to content */
+  margin: 20px 0; /* Add spacing above and below */
+}
+
+.video-container h2 {
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 10px; /* Space between heading and video */
+  font-family: "Playfair Display", serif;
+}
