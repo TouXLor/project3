@@ -38,20 +38,32 @@
 
     <div class="container2">
       <div class="section2">
-        <h2>Teachable Machine</h2>
+        <h2>Project Statement</h2>
         <p>
-          Teachable Machine Learning is the concept of empowering non-technical
-          users to train, test, and deploy machine learning models without
-          requiring expertise in programming or data science.
+          Machine Learning is a subset of AI and one of the leading techniques 
+          that enable computers to learn patterns from data and make decisions without 
+          being explicitly programmed to. Through examples and thorough analysis, 
+          machine learning can identify patterns, make predictions, and improve 
+          performance over time as they continue to process more data. 
+        </p>
+        <p>
+          After learning about machine learning, this project gave us a hands-on 
+          opportunity to reflect on the many challenges that Buolamwini describes in her book, Unmaking AI. 
+          We learned that there were many decisions that go into making AI systems accurate and reliable. 
+          The process of creating and testing this algorithm provided valuable insights into 
+          the technical challenges and broader ethical issues surrounding AI.
         </p>
       </div>
 
       <div class="section2">
         <h2>Project Overview/Objectives</h2>
         <p>
-          Our objective for this project is to create and train a machine to
-          recognize our own objects through camera. As well as do a project
-          statement reflecting on Buolawimini's book.
+          Our objective for this project is to use machine learning to recognize 
+          and classify common classroom items such as pencil cases, scissors, and erasers. 
+          As we went through the motions of training a machine to differentiate between 
+          different objects, we faced challenges and were able to think critically about 
+          how our experience in this process related to the various topics 
+          discussed in Unmasking AI by Joy Buolamiwini.
         </p>
         <a
           href="https://teachablemachine.withgoogle.com/models/5ld8GB7Ou/"
@@ -63,16 +75,16 @@
 
     <div class="container3">
       <div class="section3">
-        <h2>Process</h2>
+        <h2>The Process</h2>
         <p>
-          We started by trying to train a machine learning model to recognize
-          different writing utensils like pens, pencils, and highlighters. This
-          didn’t work out well because the utensils were too small and thin,
-          making it hard for the model to identify them correctly. So, we
-          switched to larger and thicker objects, like pencil cases and
-          scissors, which worked better. To help the model learn, we took a lot
-          of pictures of each object from different angles and distances to
-          create a variety of examples.
+          Originally, we aimed to train this machine-learning model to recognize 
+          different writing utensils such as pens, pencils, and highlighters. 
+          This didn’t work out well because they were too small and thin, making it 
+          difficult for the model to identify them correctly through the camera. 
+          We pivoted by switching to larger and thicker items that were still in the same realm, 
+          which worked out better as they were more easily recognizable. To help the model learn, 
+          we took multiple pictures of these objects from different angles and distances for the 
+          machine to build a better understanding of the shape of these objects.
         </p>
         <img
           src="trained_pictures.png"
@@ -80,22 +92,20 @@
           class="machineLearningPics"
         />
         <p>
-          During testing, the algorithm demonstrated reasonable accuracy but
-          struggled with certain objects like the pencil case and eraser when
-          they were positioned farther away. This was likely due to having fewer
-          images of these objects compared to scissors. Additionally, we noticed
-          that the model's performance could be limited by the lack of variety
-          in our dataset, as we only had one of each object and didn’t capture
-          photos in different lighting conditions. For example, one of the
-          failures we encountered involved a pink eraser with two distinct
-          sides: one blank and the other with printed letters. When testing the
-          AI with this eraser, it incorrectly labeled the blank side as a pencil
-          case but correctly identified the side with letters as an eraser. This
-          inconsistency highlighted the model’s reliance on specific visual
-          features and its difficulty generalizing from limited data. Overall,
-          the process revealed that the quantity and diversity of training data
-          significantly impact the algorithm’s ability to generalize and
-          accurately identify objects.
+          Objects such as the pencil case and eraser were often misidentified 
+          when positioned further away from the camera, likely due to having 
+          fewer images of these specific objects compared to the scissors. 
+          Additionally, the model’s performance was limited by the lack of variety 
+          in our dataset, as we only had one of each object and did not capture 
+          photos in different lighting conditions. For example, one of the failures 
+          we encountered involved a pink eraser with two distinct sides: one blank 
+          and the other with printed letters. When testing the AI with this eraser, 
+          it incorrectly labeled the blank side as a pencil case but correctly 
+          identified the side with letters as an eraser. This inconsistency highlighted
+          the model’s reliance on specific visual features and its difficulty generalizing
+          from limited data. Overall, the process revealed that the quantity and 
+          diversity of training data significantly impact the algorithm’s ability 
+          to generalize and accurately identify objects.
         </p>
       </div>
     </div>
@@ -123,6 +133,7 @@
           intelligence, which are topics that are covered and explored through
           various real-life scenarios in Unmasking AI.
         </p>
+        <h2>Technical Issues</h2>
         <p>
           One of the biggest takeaways from our project was realizing just how
           much the quality and variety of training data affect how well an AI
@@ -149,98 +160,65 @@
 
     <div class="container3">
       <div class="section3">
-        <h2>Reflection</h2>
+        <h2>Our Takeaways</h2>
         <p>
-          During our brainstorming process, we had initially planned on using
-          writing utensils, such as pens, pencils, and highlighters, as objects
-          to test the algorithm. However, these objects were too small for the
-          algorithm to effectively recognize. As a result, we decided to switch
-          to larger, thicker objects like pencil cases and scissors, which were
-          easier for the model to identify. While this change improved results,
-          it also highlighted some limitations in our dataset. This adjustment
-          helped us recognize the importance of human decision-making in shaping
-          the algorithm’s dataset and outcomes.
+          One of the biggest takeaways from our project was realizing just how 
+          much the quality and variety of training data affect how well an AI system works. 
+          This process revealed that the quantity and diversity of training data 
+          significantly impact the algorithm’s ability to generalize and accurately 
+          identify objects. We learned that the machine was very particular with 
+          the environmental factors at play, so due to our dataset and the conditions 
+          of the lighting it’s probable that if we tested variations of the items 
+          then there’s a possibility that it wouldn’t recognize it at all. Meaning 
+          that a pencil case of a different color or a pair of scissors with a 
+          different shape and design might not be properly categorized.
         </p>
+        <h2>Connections to the Book</h2>
         <p>
-          Another challenge we faced was the lack of variety in the objects we
-          used. We only had one pencil case, one pair of scissors, and one
-          eraser, which made it difficult to ensure the algorithm’s accuracy
-          across a broader range of scenarios. To train the algorithm, we took
-          many pictures of each object from various angles and distances. This
-          step proved essential in improving recognition accuracy. However, the
-          algorithm struggled when objects were too far from the camera, likely
-          because these objects had fewer training images compared to others.
-          Lighting conditions during training also posed a significant
-          limitation. Since we only captured photos in a single-lighting setup,
-          the algorithm’s performance was less reliable in different
-          environments. This contributed to instances of false positives during
-          testing. For example, the model occasionally misidentified the pencil
-          case as scissors, as demonstrated in our project video. We even had to
-          block light from the camera in some instances to help the algorithm
-          recognize objects correctly. These errors were more frequent when the
-          object was poorly lit or partially obstructed, highlighting the
-          importance of diverse and high-quality training data. Through this
-          process, we learned that providing more photos for each object
-          significantly improves the algorithm’s accuracy. This project also
-          underscored the value of adaptability. When we encountered issues with
-          our initial objects, we adjusted our approach and used different kinds
-          of objects, which improved the results.
-        </p>
-        <p>
-          In this project, we learned that machine learning models rely on
-          training data to identify patterns. If one category has more data than
-          another, the model will become better at recognizing the category with
-          more data because it has more examples to learn from. While we used
-          common items for this project, there wasn’t much variety to compare
-          between categories. Most of the items were easy to access, but we
-          chose not to include multiple variations of each item at the time. One
-          challenge we faced was the difference in the number of images used to
-          train the different categories. For example, the eraser, being smaller
-          and rectangular in shape, lacked complexity, which limited the variety
-          of angles and ways we could photograph it. In contrast, scissors, with
-          their more complex and dynamic shape, allowed for greater interaction
-          and movement. This enabled us to capture a wider variety of images
-          from different angles and perspectives, resulting in a more diverse
-          dataset for the scissors compared to the eraser.
-        </p>
-        <p>
-          Overall, this project taught us a great deal about the challenges and
-          complexities of training an object recognition algorithm. Starting
-          with our shift from the original plan to adapting and broadening our
-          scope, we gained a deeper understanding of how dataset diversity
-          impacts model performance. While the change to larger objects improved
-          accuracy, the algorithm still struggled to recognize different sizes
-          or types of the same object. Moving forward, we plan to include more
-          object types, capture photos in different settings, and test the
-          algorithm in various scenarios to improve its accuracy and
-          reliability. These insights reinforce a larger point: AI systems are
-          only as robust as the data and design choices made by their
-          developers. By reflecting on these experiences, we aim to adopt a more
+          Joy Buolamwini explains how AI systems that are trained on narrow or 
+          unrepresentative data often perform poorly when applied in real-world situations, 
+          especially when dealing with diverse human populations. Even though our project 
+          was focused on objects, the same pattern showed up—if the training data isn’t diverse, 
+          the system’s abilities are going to be limited, no matter what it’s trying to identify. 
+          Our decision to make changes throughout the process of this model underscores 
+          a larger point: AI systems are only as robust as the data and design choices 
+          made by their developers. By reflecting on these, we hope to carry forward a more
           thoughtful and ethical approach to AI development.
         </p>
-        <h2>Conclusion</h2>
         <p>
-          Our project prompted us to consider how these technical and ethical
-          challenges scale up in real-world applications. While our algorithm’s
-          limitations primarily affected its ability to classify school
-          supplies, similar biases in larger systems can have far more serious
-          consequences. Buolamwini’s work highlights numerous examples where
-          biased AI systems perpetuate discrimination—from facial recognition
-          tools that misidentify or fail to identify people of color to hiring
-          algorithms that disadvantage women. For us, these examples emphasized
-          the importance of addressing bias early in the development process,
-          even in seemingly simple projects like ours.
+          Our project prompted us to think about how these technical and ethical challenges 
+          scale up in real-world applications. While our algorithm’s limitations primarily 
+          affected its ability to classify school supplies, there are similar biases
+          in larger systems that can have much more serious consequences. Buolamwini’s 
+          work highlights numerous cases where biased AI systems have perpetuated 
+          discrimination, from facial recognition tools that misidentify, or fail to
+          identify, people of color to hiring algorithms that disadvantage women. 
+          For us, these examples emphasized the importance of addressing bias 
+          early in the development process, even in a seemingly simple project like ours.
+        </p>
+        <h2>Reflection</h2>
+        <p>
+          As we worked through the changes in this process, switching our 
+          focus to different items, and making decisions that impacted 
+          the performance of our model–it made us recognize the importance 
+          of human decision-making in shaping an algorithm’s dataset and
+          outcomes. Our image variety, positioning, and lighting setup
+          were all factors that affected the accuracy of our model. 
+          Through these processes, we learned that the more photos under
+          different conditions we provided for each object, the more 
+          accurate the machine was going to be.
         </p>
         <p>
-          With a deeper understanding of the technical challenges involved in
-          building an AI system, we are better prepared to tackle the ethical
-          responsibilities that come with it. This project and our exposure to
-          class materials have allowed us to step back and evaluate the many
-          interconnected factors that drive machine learning systems. Fairness
-          and bias are essential considerations when creating algorithms, as
-          these systems are designed to pick up on patterns and make
-          predictions. By prioritizing these values, we hope to contribute to a
-          more equitable future for AI development.
+          Now, with a deeper understanding of the technical 
+          challenges involved in this project and with building
+          an AI system, we are able to move on with the responsibilities 
+          that come with it and take responsibility for our work. This 
+          small-scale representation of datasets in machine learning and 
+          our exposure to class materials have allowed us to take a step 
+          back and evaluate all of the cogs that tick to work these systems 
+          into place. Fairness and bias are essential considerations when 
+          creating algorithms for computers as they’re meant to pick up on 
+          patterns and make predictions.
         </p>
       </div>
     </div>
