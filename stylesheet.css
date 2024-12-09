@@ -186,6 +186,11 @@ img.imgContent {
   padding-left: 30%;
 }
 
+.machineLearningPics {
+  max-width: 100%;
+  height: 10%;
+}
+
 /* Smaller container*/
 .container2 {
   display: flex;
