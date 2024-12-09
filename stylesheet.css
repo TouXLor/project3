@@ -186,9 +186,10 @@ img.imgContent {
   padding-left: 30%;
 }
 
-/*.machineLearningPics {
+.machineLearningPics {
   max-width: 200%;
-}*/
+  height: auto;
+}
 
 /* Smaller container*/
 .container2 {
